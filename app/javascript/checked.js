@@ -18,7 +18,7 @@ function check() {
       // Ajaxに必要なオブジェクトを生成している
       const XHR = new XMLHttpRequest();
  
-      // openでリクエストを決めてい
+      // openでリクエストを決めている
       XHR.open("GET", `/posts/${postId}`, true);
  
       // レスポンスのタイプを指定する
