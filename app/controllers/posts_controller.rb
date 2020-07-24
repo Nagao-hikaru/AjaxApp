@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   def checked
     post = Post.find(params[:id])
     if post.checked then
-      # checkedメソッドは既読されていない時に真となる
+      # thenって正しいみたいなっことで== trueと同じ意味
       post.update(checked: false)
     else
       post.update(checked: true)
