@@ -9,6 +9,7 @@ function check() {
       if (post.getAttribute("data-load") != null) {
        return null;
      }
+    //  一度クリックするとdatta-loadが付与されるので動きは止まっている状態
      post.setAttribute("data-load", "true");
     // 投稿をクリックした場合に実行する処理を定義している
     post.addEventListener("click", (e) => {
